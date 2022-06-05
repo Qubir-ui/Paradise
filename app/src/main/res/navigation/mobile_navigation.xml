@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.paradise.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_furniture"
+            app:destination="@id/furniture"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="furniture_name"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.paradise.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_account2"
+            app:destination="@id/account2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_profile_to_settings2"
+            app:destination="@id/settings2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_profile_to_purshares"
+            app:destination="@id/purshares"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_profile_to_feedBack"
+            app:destination="@id/feedBack"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_profile_to_info_application"
+            app:destination="@id/info_application"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.example.paradise.ui.favourites.FavouritesFragment"
+        android:label="@string/title_favourites"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/navigation_basket"
+        android:name="com.example.paradise.ui.basket.BasketFragment"
+        android:label="@string/title_basket"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/account2"
+        android:name="com.example.paradise.ui.profile.account.Account"
+        android:label="account_fragment"
+        tools:layout="@layout/account_fragment" >
+        <action
+            android:id="@+id/action_account2_to_account_info"
+            app:destination="@id/account_info"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_account2_to_adress"
+            app:destination="@id/adress"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_account2_to_password2"
+            app:destination="@id/password2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/info_application"
+        android:name="com.example.paradise.ui.profile.info.Info_application"
+        android:label="@string/info_application"
+        tools:layout="@layout/info_application_fragment" />
+    <fragment
+        android:id="@+id/feedBack"
+        android:name="com.example.paradise.ui.profile.feedback.FeedBack"
+        android:label="@string/feedback"
+        tools:layout="@layout/feed_back_fragment" />
+    <fragment
+        android:id="@+id/purshares"
+        android:name="com.example.paradise.ui.profile.purshares.Purshares"
+        android:label="@string/purshares"
+        tools:layout="@layout/purshares_fragment" />
+    <fragment
+        android:id="@+id/account_info"
+        android:name="com.example.paradise.ui.profile.account.account_info.account_info"
+        android:label="@string/account_info"
+        tools:layout="@layout/account_info_fragment" />
+    <fragment
+        android:id="@+id/adress"
+        android:name="com.example.paradise.ui.profile.account.adress.Adress"
+        android:label="@string/adres"
+        tools:layout="@layout/adress_fragment" />
+    <fragment
+        android:id="@+id/password2"
+        android:name="com.example.paradise.ui.profile.account.password.Password"
+        android:label="password_fragment"
+        tools:layout="@layout/password_fragment" />
+    <fragment
+        android:id="@+id/settings2"
+        android:name="com.example.paradise.ui.profile.settings.Settings"
+        android:label="@string/settings"
+        tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/furniture"
+        android:name="com.example.paradise.ui.home.Furniture"
+        android:label="furniture_fragment"
+        tools:layout="@layout/furniture_fragment" />
+</navigation>

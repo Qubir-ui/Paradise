@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="@string/search"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_search" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/popular_products"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_vertical"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/chair_1"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image"/>
+
+                <ImageView
+                    android:id="@+id/chair_2"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+                <ImageView
+                    android:id="@+id/sofa_1"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/sofa_2"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+                <ImageView
+                    android:id="@+id/chest_1"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+                <ImageView
+                    android:id="@+id/chest_2"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/bed_1"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+                <ImageView
+                    android:id="@+id/bed_2"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+                <ImageView
+                    android:id="@+id/table_1"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/table_2"
+                    android:layout_width="105dp"
+                    android:layout_height="99dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Space
+        android:id="@+id/space8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

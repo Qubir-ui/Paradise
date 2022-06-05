@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Парадиз</string>
+    <string name="title_home">Главная</string>
+    <string name="title_profile">Профиль</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="login_description">Зарегистрируйтесь или войдите в систему, чтобы получить доступ к специальным предложениям и вашим любимым товарам</string>
+    <string name="enter_system">Войти в систему</string>
+    <string name="registration">Регистрация</string>
+    <string name="title_favourites">Избранное</string>
+    <string name="add_favourites">Добавить группу избранного</string>
+    <string name="title_basket">Корзина</string>
+    <string name="empty_basket">Корзина пуста</string>
+    <string name="feedback_hint">Как можно сделать приложение лучше?\nЭтот отзыв анонимный</string>
+    <string name="account">Учетная запись</string>
+    <string name="account_info">Данные учетной записи</string>
+    <string name="adres">Адрес</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="purshares">Покупки</string>
+    <string name="info_application">О приложении</string>
+    <string name="developers">Разработали</string>
+    <string name="popov">Попов Андрей\nПавлович</string>
+    <string name="group_name">Группа 351915</string>
+    <string name="koposov">Копосов Алексей\nДенисович</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="send">Отправить</string>
+    <string name="settings">Настройки</string>
+    <string name="interaction">Взаимодействие</string>
+    <string name="sms">СМС</string>
+    <string name="email">Email</string>
+    <string name="region_and_language">Регион и язык</string>
+    <string name="place">Место</string>
+    <string name="language">Язык</string>
+    <string name="apply">Применить</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="phone">Телефон</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="electronic_mail">Электронная почта</string>
+    <string name="adres_string_1">Адресная строка 1</string>
+    <string name="adres_string_2">Адресная строка 2</string>
+    <string name="specify_the_city">Укажите город</string>
+    <string name="specify_the_index">Укажите индекс</string>
+    <string name="search">Поиск</string>
+    <string name="popular_products">Популярные товары</string>
+    <string name="to_basket">Добавить в корзину</string>
+    <string-array name="places">
+        <item>Россия (Russia)</item>
+        <item>United States (English)</item>
+    </string-array>
+
+</resources>
